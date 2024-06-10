@@ -2,6 +2,8 @@
 
 A telegram bot for getting videos from websites.
 
+Try it at https://t.me/CleebVidifierBot
+
 ## Running
 
 ### Without docker or for development
@@ -32,7 +34,7 @@ See [quick-bot-no-pain's documentation](https://github.com/0x5c/quick-bot-no-pai
     version: '3'
     services:
       bot:
-        image: "ghcr.io/classabbyamp/vidifierbot:latest"
+        image: "ghcr.io/cschmittiey/vidifierbot:latest"
         restart: on-failure
         volumes:
           - "./data:/app/data:rw"
@@ -53,7 +55,7 @@ See [quick-bot-no-pain's documentation](https://github.com/0x5c/quick-bot-no-pai
 
 ## Copyright
 
-Copyright (C) 2021-2022 classabbyamp
+Copyright (C) 2021-2022 classabbyamp, 2024 cschmittiey
 
 This program is released under the terms of the BSD-3-Clause license.
 See `LICENSE` for full license text.
