@@ -20,7 +20,7 @@ from signal import SIGINT, SIGTERM, SIGABRT, SIGUSR1, SIGUSR2
 
 import yt_dlp
 import telegram as tg
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+from telegram.ext import Updater, CommandHandler, MessageHandler, filters, CallbackContext
 
 from data import keys
 
@@ -277,7 +277,7 @@ if __name__ == "__main__":
     dp.add_handler(CommandHandler("help", help_command, run_async=True))
     dp.add_handler(CommandHandler("vidify", vidify_command, run_async=True))
     dp.add_handler(CommandHandler("gifify", gifify_command, run_async=True))
-    dp.add_handler(MessageHandler(Filters.chat_type.private & Filters.entity("url"), vidify_command, run_async=True))
+    dp.add_handler(MessageHandler(filters.chat_type.private & filters.entity("url"), vidify_command, run_async=True))
     dp.add_error_handler(error_handler)
 
     jq = updater.job_queue
