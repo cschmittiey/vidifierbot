@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [0.6.4] - 2024-06-10
+### Changed
+- Update yt-dlp to nightly versions to better support changes in video sources.
+- docker image now uses python:alpine instead of void because i don't know shit about void
+
+### Fixed
+- new URLs since I forked, thanks @classabbyamp for the original work.
 
 ## [0.6.3] - 2023-02-18
 ### Changed
