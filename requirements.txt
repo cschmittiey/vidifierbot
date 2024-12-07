@@ -1,2 +1,2 @@
-python-telegram-bot[job-queue]==21.6
+python-telegram-bot[job-queue]==21.9
 yt_dlp
