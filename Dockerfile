@@ -5,7 +5,7 @@ COPY . /app
 WORKDIR /app
 
 RUN pip install --no-cache-dir -r requirements.txt
-RUN apk add --no-cache ffmpeg
+RUN apk add --no-cache ffmpeg deno
 
 ENV PYTHON_BIN python3
 ENV PYTHONUNBUFFERED 1
