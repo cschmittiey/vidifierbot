@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-05-27
+### Added
+- Install `deno` in the container so yt-dlp can run YouTube's JS extractor.
+
+### Changed
+- Update `python-telegram-bot` to 22.7.
+- Update `actions/checkout` to v6 and `docker/login-action` to v4 in workflows.
+
 ## [0.6.4] - 2024-06-10
 ### Changed
 - Update yt-dlp to nightly versions to better support changes in video sources.
@@ -76,7 +84,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Basic url -> video functionality
 
 
-[Unreleased]: https://github.com/classabbyamp/vidifierbot/compare/v0.6.3...HEAD
+[Unreleased]: https://github.com/cschmittiey/vidifierbot/compare/v0.7.0...HEAD
+[0.7.0]: https://github.com/cschmittiey/vidifierbot/releases/tag/v0.7.0
+[0.6.4]: https://github.com/cschmittiey/vidifierbot/releases/tag/v0.6.4
 [0.6.3]: https://github.com/classabbyamp/vidifierbot/releases/tag/v0.6.3
 [0.6.2]: https://github.com/classabbyamp/vidifierbot/releases/tag/v0.6.2
 [0.6.1]: https://github.com/classabbyamp/vidifierbot/releases/tag/v0.6.1
